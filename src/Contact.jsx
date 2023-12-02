@@ -1,12 +1,10 @@
-import { useState } from "react";
 import Navbar from "./components/Navbar";
 
-export default function App() {
-
+export default function Contact() {
   return(
     <div className="min-h-screen backgroud">
-        <Navbar activePage="home" />
-
+        <Navbar activePage="contact" />
+        
     </div>
   )
 }
