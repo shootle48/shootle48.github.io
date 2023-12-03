@@ -33,7 +33,7 @@ export default function App() {
         {/* paragrahp */}
         <div className="p-6 md:p-10">
           <img
-            className="rounded-lg w-full object-cover max-h-[300px] mb-4"
+            className="rounded-lg w-full object-cover max-h-[300px] mb-4 md:w-auto"
             src={Avatar}
             alt=""
           />
