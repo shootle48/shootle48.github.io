@@ -30,7 +30,8 @@ export default function App() {
       <Navbar activePage="home" />
 
       <div className="flex flex-col justify-center md:items-center">
-        {/* paragrahp */}
+
+        {/* Header */}
         <div className="p-6 md:p-10">
           <img
             className="rounded-lg w-full object-cover max-h-[300px] mb-4 md:w-auto"
@@ -64,6 +65,7 @@ export default function App() {
             Hire Me!
           </button>
 
+          {/* About me */}
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 mt-4">
             {about.map((item) => (
               <div key={item.title}>
@@ -75,9 +77,13 @@ export default function App() {
             ))}
           </div>
 
+
+          {/* My project */}
           <div className="mt-6">
             <h1 className="text-fuchsia-100 text-2xl pb-3">My Projects</h1>
             <div className="grid grid-cols-2 gap-6 mt-1">
+
+              {/* Project 1 */}
               <div>
                 <img src={Preview} alt="Preview" className="rounded-lg" />
                 <p className="mt-3 text-fuchsia-100/90 max-w-lg">
@@ -88,10 +94,15 @@ export default function App() {
                   Error a veniam maiores non nulla aut commodi, sapiente beatae
                   consequuntur placeat. Eaque eos similique tenetur.
                 </p>
-                <button type="button" className="text-fuchsia-800 bg-white px-5 py-2 text-lg font-bold rounded-lg hover:opacity-75 transition-opacity my-5">
+                <button
+                  type="button"
+                  className="text-fuchsia-800 bg-white px-5 py-2 text-lg font-bold rounded-lg hover:opacity-75 transition-opacity my-5"
+                >
                   Visit
                 </button>
               </div>
+
+              {/* Project 2 */}
               <div>
                 <img src={Preview} alt="Preview" className="rounded-lg" />
                 <p className="mt-3 text-fuchsia-100/90 max-w-lg">
@@ -102,10 +113,15 @@ export default function App() {
                   Error a veniam maiores non nulla aut commodi, sapiente beatae
                   consequuntur placeat. Eaque eos similique tenetur.
                 </p>
-                <button type="button" className="text-fuchsia-800 bg-white px-5 py-2 text-lg font-bold rounded-lg hover:opacity-75 transition-opacity my-5">
+                <button
+                  type="button"
+                  className="text-fuchsia-800 bg-white px-5 py-2 text-lg font-bold rounded-lg hover:opacity-75 transition-opacity my-5"
+                >
                   Visit
                 </button>
               </div>
+
+              {/* Project 3 */}
               <div>
                 <img src={Preview} alt="Preview" className="rounded-lg" />
                 <p className="mt-3 text-fuchsia-100/90 max-w-lg">
@@ -116,10 +132,15 @@ export default function App() {
                   Error a veniam maiores non nulla aut commodi, sapiente beatae
                   consequuntur placeat. Eaque eos similique tenetur.
                 </p>
-                <button type="button" className="text-fuchsia-800 bg-white px-5 py-2 text-lg font-bold rounded-lg hover:opacity-75 transition-opacity my-5">
+                <button
+                  type="button"
+                  className="text-fuchsia-800 bg-white px-5 py-2 text-lg font-bold rounded-lg hover:opacity-75 transition-opacity my-5"
+                >
                   Visit
                 </button>
               </div>
+
+              {/* Project 4 */}
               <div>
                 <img src={Preview} alt="Preview" className="rounded-lg" />
                 <p className="mt-3 text-fuchsia-100/90 max-w-lg">
@@ -130,10 +151,15 @@ export default function App() {
                   Error a veniam maiores non nulla aut commodi, sapiente beatae
                   consequuntur placeat. Eaque eos similique tenetur.
                 </p>
-                <button type="button" className="text-fuchsia-800 bg-white px-5 py-2 text-lg font-bold rounded-lg hover:opacity-75 transition-opacity my-5">
+                <button
+                  type="button"
+                  className="text-fuchsia-800 bg-white px-5 py-2 text-lg font-bold rounded-lg hover:opacity-75 transition-opacity my-5"
+                >
                   Visit
                 </button>
               </div>
+
+
             </div>
           </div>
         </div>
