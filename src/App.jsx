@@ -30,7 +30,6 @@ export default function App() {
       <Navbar activePage="home" />
 
       <div className="flex flex-col justify-center md:items-center">
-
         {/* Header */}
         <div className="p-6 md:p-10">
           <img
@@ -58,12 +57,14 @@ export default function App() {
             solutions that exceed expectations.
           </p>
 
-          <button
-            className="text-fuchsia-800 bg-white px-5 py-2 text-lg font-bold rounded-lg hover:opacity-75 transition-opacity my-5"
-            type="button"
-          >
-            Hire Me!
-          </button>
+          <a href="https://github.com/shootle48" target="_blank">
+            <button
+              className="text-fuchsia-800 bg-white px-5 py-2 text-lg font-bold rounded-lg hover:opacity-75 transition-opacity my-5"
+              type="button"
+            >
+              Hire Me!
+            </button>
+          </a>
 
           {/* About me */}
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 mt-4">
@@ -77,12 +78,10 @@ export default function App() {
             ))}
           </div>
 
-
           {/* My project */}
           <div className="mt-6">
             <h1 className="text-fuchsia-100 text-2xl pb-3">My Projects</h1>
             <div className="grid grid-cols-2 gap-6 mt-1">
-
               {/* Project 1 */}
               <div>
                 <img src={Preview} alt="Preview" className="rounded-lg" />
@@ -158,8 +157,6 @@ export default function App() {
                   Visit
                 </button>
               </div>
-
-
             </div>
           </div>
         </div>
