@@ -19,213 +19,228 @@
   </head>
   <body>
     <main>
-      <div class="flex w-full flex-col">
+      <div class="flex w-full flex-col items-center">
         <div class="navbar flex items-center justify-between">
           <a class="btn btn-ghost text-3xl font-bold">Profile</a>
-          <label class="swap swap-rotate">
+          <label class="swap swap-rotate m-4">
             <!-- this hidden checkbox controls the state -->
             <input type="checkbox" class="theme-controller" value="coffee" />
             <i
-              class="fa-solid fa-mug-saucer swap-off text-3xl h-[-1]  fill-current"
+              class="fa-solid fa-mug-saucer swap-off text-3xl h-[-1] fill-current"
             ></i>
-            <i class="fa-solid fa-mug-hot swap-on text-3xl h-[-1] fill-current"></i>
+            <i
+              class="fa-solid fa-mug-hot swap-on text-3xl h-[-1] fill-current"
+            ></i>
           </label>
         </div>
 
-        <section class="max-w-3xl mx-auto w-full px-4 lg:px-0 mt-4">
-          <section class="flex flex-col items-center gap-4 px-8 rounded-lg">
-            <!-- Image -->
-            <div class="avatar mt-4">
-              <div class="skeleton">
-                <img src="img.jpg" alt="avatar" />
-              </div>
-            </div>
-
-            <!-- Content -->
-            <div class="min-h-52 flex flex-col gap-2">
-              <div class="flex flex-col items-center gap-2">
-                <h1 class="text-2xl font-semibold">
-                  <div class="flex gap-2 items-center">
-                    Thepparit Intharapraphan
-                    <i class="fa-regular fa-circle-check text-3xl"></i>
+        <div class="flex flex-col max-w-2xl">
+          <section class="mx-auto">
+            <section class="px-8 py-6 rounded-2xl bg-primary">
+              <!-- Content -->
+              <div class="min-h-52 flex flex-col gap-2 text-slate-200">
+                <div class="flex flex-col items-center gap-2">
+                  <div class="avatar online">
+                    <div class="max-w-52 rounded-full">
+                      <img src="img.jpg" />
+                    </div>
                   </div>
-                </h1>
-                <div class="flex items-center gap-2 w-fit">
-                  <svg
-                    class="w-6 h-6"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-width="2"
-                      d="m3.5 5.5 7.893 6.036a1 1 0 0 0 1.214 0L20.5 5.5M4 19h16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Z"
-                    ></path>
-                  </svg>
+                  <h1 class="text-2xl font-semibold">
+                    <div class="flex gap-2 items-center">
+                      Thepparit Intharapraphan
+                      <i class="fa-regular fa-circle-check text-3xl"></i>
+                    </div>
+                  </h1>
+                  <div class="flex items-center gap-2">
+                    <svg
+                      class="w-6 h-6"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-width="2"
+                        d="m3.5 5.5 7.893 6.036a1 1 0 0 0 1.214 0L20.5 5.5M4 19h16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Z"
+                      ></path>
+                    </svg>
 
-                  <span> thepparit.i@kkumail.com </span>
+                    <span> thepparit.i@kkumail.com </span>
+                  </div>
+                </div>
+                <div class="flex gap-2 my-2">
+                  <div class="badge badge-info gap-2 py-3">Com-Sci</div>
+                  <div class="badge badge-success gap-2 py-3">653450091-4</div>
+                  <div class="badge badge-warning gap-2 py-3">Male 😎</div>
+                  <div class="badge badge-error gap-2 py-3">Matcha 🍵</div>
+                </div>
+                <p class="mb-4">
+                  "Living life in sync with chill vibes, you'll often find me
+                  nestled with a bowl of matcha, soaking in the serene melodies
+                  of lofi beats through my headphones. Each day unfolds gently,
+                  embraced by a rhythm of relaxation and mindful presence.
+                  Whether it's savoring the subtle bitterness of matcha or
+                  letting the soothing music paint tranquil landscapes in my
+                  mind, I navigate life one relaxed moment at a time. In this
+                  peaceful cocoon, I find inspiration and recharge, appreciating
+                  the simple joys that harmonize with the essence of
+                  tranquility."
+                </p>
+                <div class="flex justify-between gap-4">
+                  <button class="btn w-[50%] focus:bg-rose-700 focus:text-slate-200 ">
+                    <i class="fa-solid fa-heart"></i>
+                    Follow
+                  </button>
+                  <button class="btn w-[50%]">
+                    <a href="https://www.facebook.com/Inwparit1316" target="_blank">
+                      <i class="fa-solid fa-user-plus"></i>
+                      Add Friend
+                    </a>
+                  </button>
                 </div>
               </div>
-              <div class="grid grid-cols-2 gap-2 my-2">
-                <button class="btn btn-secondary rounded-lg">
-                  Computer Science
-                </button>
-                <button class="btn btn-secondary rounded-lg">Matcha 🍵</button>
-                <button class="btn btn-secondary rounded-lg">
-                  653450091-4
-                </button>
-                <button class="btn btn-secondary rounded-lg">Male 😎</button>
-              </div>
-              <p class="mb-4">
-                "Chill vibes, Matcha in bowl, and lofi beats in my headphones.
-                Living life one relaxed moment at a time."
-              </p>
+            </section>
+          </section>
+          <section class="max-w-3xl">
+            <div class="navbar">
+              <a class="btn btn-ghost text-lg font-bold">My Projects</a>
+            </div>
+            <div class="flex flex-col gap-6">
+              <a
+                href="https://github.com/shootle48/Lab_Pokemon_dex"
+                target="_blank"
+              >
+                <span
+                  class="flex justify-between items-center mx-8 px-6 py-4 rounded-lg btn btn-secondary h-fit"
+                >
+                  <div class="flex items-center gap-6">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-10"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"
+                      />
+                    </svg>
+                    <div>
+                      <p class="text-lg font-bold">To-do Application</p>
+                      <p class="w-fit">OOP</p>
+                    </div>
+                  </div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"
+                    />
+                  </svg>
+                </span>
+              </a>
+              <a
+                href="https://github.com/shootle48/Lab_Pokemon_dex"
+                target="_blank"
+              >
+                <span
+                  class="flex justify-between items-center mx-8 px-6 py-4 rounded-lg btn btn-secondary h-fit"
+                >
+                  <div class="flex items-center gap-6">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-10"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"
+                      />
+                    </svg>
+                    <div>
+                      <p class="text-lg font-bold">Pokemon Dex</p>
+                      <p class="w-fit">OOP</p>
+                    </div>
+                  </div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"
+                    />
+                  </svg>
+                </span>
+              </a>
+              <a href="https://shootle48.github.io/" target="_blank">
+                <span
+                  class="flex justify-between items-center mx-8 px-6 py-4 rounded-lg btn btn-secondary h-fit"
+                >
+                  <div class="flex items-center gap-6">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-10"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"
+                      />
+                    </svg>
+                    <div>
+                      <p class="text-lg font-bold">Portfolio</p>
+                      <p class="w-fit">Front-End</p>
+                    </div>
+                  </div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"
+                    />
+                  </svg>
+                </span>
+              </a>
             </div>
           </section>
-        </section>
-        <div class="divider"></div>
-        <section>
-          <div class="navbar">
-            <a class="btn btn-ghost text-lg font-bold">My Projects</a>
-          </div>
-          <div class="flex flex-col gap-6">
-            <a
-              href="https://github.com/shootle48/Lab_Pokemon_dex"
-              target="_blank"
-            >
-              <span
-                class="flex justify-between items-center mx-8 px-6 py-4 rounded-lg btn btn-secondary h-fit"
-              >
-                <div class="flex items-center gap-6">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-10"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"
-                    />
-                  </svg>
-                  <div>
-                    <p class="text-lg font-bold">To-do Application</p>
-                    <p class="w-fit">OOP</p>
-                  </div>
-                </div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"
-                  />
-                </svg>
-              </span>
-            </a>
-            <a
-              href="https://github.com/shootle48/Lab_Pokemon_dex"
-              target="_blank"
-            >
-              <span
-                class="flex justify-between items-center mx-8 px-6 py-4 rounded-lg btn btn-secondary h-fit"
-              >
-                <div class="flex items-center gap-6">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-10"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"
-                    />
-                  </svg>
-                  <div>
-                    <p class="text-lg font-bold">Pokemon Dex</p>
-                    <p class="w-fit">OOP</p>
-                  </div>
-                </div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"
-                  />
-                </svg>
-              </span>
-            </a>
-            <a href="https://shootle48.github.io/" target="_blank">
-              <span
-                class="flex justify-between items-center mx-8 px-6 py-4 rounded-lg btn btn-secondary h-fit"
-              >
-                <div class="flex items-center gap-6">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-10"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"
-                    />
-                  </svg>
-                  <div>
-                    <p class="text-lg font-bold">Portfolio</p>
-                    <p class="w-fit">Front-End</p>
-                  </div>
-                </div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"
-                  />
-                </svg>
-              </span>
-            </a>
-          </div>
-        </section>
+        </div>
 
-        <div class="divider"></div>
-
-        <footer class="footer px-8 py-4 mt-6">
+        <footer class="footer px-8 py-4 mt-12 bg-secondary text-slate-200">
           <aside>
             <svg
               width="50"
