@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="lofi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,22 +10,33 @@
       rel="stylesheet"
       type="text/css"
     />
+
     <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/ccc017319d.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <main class="bg-[#1d232a]">
+    <main>
       <div class="flex w-full flex-col">
-        <div class="navbar bg-[#1d232a]">
-          <a class="btn btn-ghost text-3xl font-bold text-[#cbd5e1]">Profile</a>
+        <div class="navbar flex items-center justify-between">
+          <a class="btn btn-ghost text-3xl font-bold">Profile</a>
+          <label class="swap swap-rotate">
+            <!-- this hidden checkbox controls the state -->
+            <input type="checkbox" class="theme-controller" value="coffee" />
+            <i
+              class="fa-solid fa-mug-saucer swap-off text-3xl h-[-1]  fill-current"
+            ></i>
+            <i class="fa-solid fa-mug-hot swap-on text-3xl h-[-1] fill-current"></i>
+          </label>
         </div>
 
         <section class="max-w-3xl mx-auto w-full px-4 lg:px-0 mt-4">
-          <section
-            class="flex flex-col bg-[#cbd5e1] items-center gap-4 px-8 rounded-lg"
-          >
+          <section class="flex flex-col items-center gap-4 px-8 rounded-lg">
             <!-- Image -->
             <div class="avatar mt-4">
-              <div class="skeleton h-32 w-32">
+              <div class="skeleton">
                 <img src="img.jpg" alt="avatar" />
               </div>
             </div>
@@ -33,13 +44,13 @@
             <!-- Content -->
             <div class="min-h-52 flex flex-col gap-2">
               <div class="flex flex-col items-center gap-2">
-                <h1 class="text-2xl font-semibold text-slate-800">
-                  <div class="flex gap-2">
+                <h1 class="text-2xl font-semibold">
+                  <div class="flex gap-2 items-center">
                     Thepparit Intharapraphan
-                    <img class="w-8" src="check-mark.png" alt="" />
+                    <i class="fa-regular fa-circle-check text-3xl"></i>
                   </div>
                 </h1>
-                <div class="flex items-center gap-2 text-slate-600 w-fit">
+                <div class="flex items-center gap-2 w-fit">
                   <svg
                     class="w-6 h-6"
                     aria-hidden="true"
@@ -60,13 +71,17 @@
                   <span> thepparit.i@kkumail.com </span>
                 </div>
               </div>
-              <div class="grid grid-cols-2 gap-4 my-2 ">
-                <button class="btn bg-[#1d232a] text-[#cbd5e1] hover:bg-[#33383F]">Computer Science</button>
-                <button class="btn bg-[#1d232a] text-[#cbd5e1] hover:bg-[#33383F]">Matcha 🍵</button>
-                <button class="btn bg-[#1d232a] text-[#cbd5e1] hover:bg-[#33383F]">653450091-4</button>
-                <button class="btn bg-[#1d232a] text-[#cbd5e1] hover:bg-[#33383F]">Male 😎</button>
+              <div class="grid grid-cols-2 gap-2 my-2">
+                <button class="btn btn-secondary rounded-lg">
+                  Computer Science
+                </button>
+                <button class="btn btn-secondary rounded-lg">Matcha 🍵</button>
+                <button class="btn btn-secondary rounded-lg">
+                  653450091-4
+                </button>
+                <button class="btn btn-secondary rounded-lg">Male 😎</button>
               </div>
-              <p class="text-slate-800 mb-4">
+              <p class="mb-4">
                 "Chill vibes, Matcha in bowl, and lofi beats in my headphones.
                 Living life one relaxed moment at a time."
               </p>
@@ -75,18 +90,16 @@
         </section>
         <div class="divider"></div>
         <section>
-          <div class="navbar bg-[#1d232a]">
-            <a class="btn btn-ghost text-lg font-bold text-[#cbd5e1]"
-              >My Projects</a
-            >
+          <div class="navbar">
+            <a class="btn btn-ghost text-lg font-bold">My Projects</a>
           </div>
-          <div class="flex flex-col gap-6 text-slate-700">
+          <div class="flex flex-col gap-6">
             <a
               href="https://github.com/shootle48/Lab_Pokemon_dex"
               target="_blank"
             >
               <span
-                class="flex justify-between items-center mx-8 px-6 py-4 bg-[#cbd5e1] rounded-lg hover:bg-[#94a3b8]"
+                class="flex justify-between items-center mx-8 px-6 py-4 rounded-lg btn btn-secondary h-fit"
               >
                 <div class="flex items-center gap-6">
                   <svg
@@ -104,8 +117,8 @@
                     />
                   </svg>
                   <div>
-                    <p class="text-lg font-semibold">To-do Application</p>
-                    <p>OOP</p>
+                    <p class="text-lg font-bold">To-do Application</p>
+                    <p class="w-fit">OOP</p>
                   </div>
                 </div>
                 <svg
@@ -129,7 +142,7 @@
               target="_blank"
             >
               <span
-                class="flex justify-between items-center mx-8 px-6 py-4 bg-[#cbd5e1] rounded-lg hover:bg-[#94a3b8]"
+                class="flex justify-between items-center mx-8 px-6 py-4 rounded-lg btn btn-secondary h-fit"
               >
                 <div class="flex items-center gap-6">
                   <svg
@@ -147,8 +160,8 @@
                     />
                   </svg>
                   <div>
-                    <p class="text-lg font-semibold">Pokemon Dex</p>
-                    <p>OOP</p>
+                    <p class="text-lg font-bold">Pokemon Dex</p>
+                    <p class="w-fit">OOP</p>
                   </div>
                 </div>
                 <svg
@@ -167,12 +180,9 @@
                 </svg>
               </span>
             </a>
-            <a
-              href="https://github.com/shootle48/Lab_Pokemon_dex"
-              target="_blank"
-            >
+            <a href="https://shootle48.github.io/" target="_blank">
               <span
-                class="flex justify-between items-center mx-8 px-6 py-4 bg-[#cbd5e1] rounded-lg hover:bg-[#94a3b8]"
+                class="flex justify-between items-center mx-8 px-6 py-4 rounded-lg btn btn-secondary h-fit"
               >
                 <div class="flex items-center gap-6">
                   <svg
@@ -190,8 +200,8 @@
                     />
                   </svg>
                   <div>
-                    <p class="text-lg font-semibold">Portfolio</p>
-                    <p>Front-End</p>
+                    <p class="text-lg font-bold">Portfolio</p>
+                    <p class="w-fit">Front-End</p>
                   </div>
                 </div>
                 <svg
@@ -215,7 +225,7 @@
 
         <div class="divider"></div>
 
-        <footer class="footer bg-neutral text-neutral-content px-8 py-4 mt-6">
+        <footer class="footer px-8 py-4 mt-6">
           <aside>
             <svg
               width="50"
@@ -238,45 +248,15 @@
           </aside>
           <nav>
             <h6 class="footer-title">Social</h6>
-            <div class="grid grid-flow-col gap-4">
-              <a>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  class="fill-current"
-                >
-                  <path
-                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
-                  ></path>
-                </svg>
+            <div class="grid grid-flow-col gap-4 text-3xl">
+              <a href="https://github.com/shootle48">
+                <i class="fa-brands fa-github"></i>
               </a>
-              <a>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  class="fill-current"
-                >
-                  <path
-                    d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
-                  ></path>
-                </svg>
+              <a href="https://www.facebook.com/Inwparit1316">
+                <i class="fa-brands fa-facebook"></i>
               </a>
-              <a>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  class="fill-current"
-                >
-                  <path
-                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
-                  ></path>
-                </svg>
+              <a href="https://www.instagram.com/bg.bigman/">
+                <i class="fa-brands fa-instagram"></i>
               </a>
             </div>
           </nav>
