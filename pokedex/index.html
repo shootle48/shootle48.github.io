@@ -11,34 +11,7 @@
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              normal: "#a9a878",
-              fire: "#f07f2f",
-              water: "#6890f0",
-              electric: "#f8d030",
-              grass: "#78c84f",
-              ice: "#98d8d8",
-              fighting: "#c02f29",
-              poison: "#a040a1",
-              ground: "#e0c069",
-              flying: "#9781d7",
-              psychic: "#f85888",
-              bug: "#a8b821",
-              rock: "#b7a038",
-              ghost: "#705798",
-              dragon: "#7038f9",
-              dark: "#6f5848",
-              steel: "#b8b8d0",
-              fairy: "#f1b6bc",
-            },
-          },
-        },
-      };
-    </script>
+    <script src="Colorcustom.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.7/dist/full.min.css"
       rel="stylesheet"
@@ -53,13 +26,17 @@
 
   <body>
     <div class="flex flex-col justify-center items-center mt-16 p-6">
-      <h1 class="text-5xl font-semibold underline mb-12"><a href="index.html">POKEDEX LABS</a></h1>
+      <h1 class="text-5xl font-semibold underline mb-12">
+        <a href="index.html">POKEDEX LABS</a>
+      </h1>
       <div
         id="name"
         class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12"
       ></div>
       <div id="type"></div>
-      <button id="loadMore" class="btn btn-primary my-6">Load More</button>
+      <button id="loadMore" class="btn btn-primary my-6 text-slate-300">
+        Load More
+      </button>
     </div>
 
     <script src="script.js"></script>
