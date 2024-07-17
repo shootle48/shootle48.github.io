@@ -1,0 +1,28 @@
+body {
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+.stat-bar {
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  overflow: hidden; /* Prevents overflow */
+}
+
+.stat-fill {
+  height: 100%;
+  background-color: #007bff;
+  border-radius: 5px;
+  transition: width 0.3s ease; /* Optional: Adds smooth width transition */
+}
+
+/* Adjust max width as needed */
+.stat-fill.max {
+  width: 100%;
+}
+
+/* Adjust overflow behavior */
+.stat-fill.overflow {
+  width: 100%;
+}

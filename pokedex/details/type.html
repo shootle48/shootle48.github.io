@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>PokeDex</title>
+    <title>Pokémon Type</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -50,24 +50,15 @@
     ></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
     <div class="m-8 mt-20 text-lg flex flex-col items-center">
-      <img
-        id="sprite"
-        src=""
-        alt="Pokemon Sprite"
-        class="w-[150px] mb-4 bg-slate-300 rounded-full p-4"
-      />
-      <div class="flex flex-col gap-2">
-        <h1 id="name" class="font-semibold text-4xl">PokeDex Labs</h1>
-        <div>Height: <span id="height"></span></div>
-        <div>Weight: <span id="weight"></span></div>
-        <div>Types: <span id="types"></span></div>
-        <div id="stats"></div>
-        <div>Abilities: <span id="abilities"></span></div>
-      </div>
+      <h1 id="type-name" class="font-semibold text-4xl mb-4 underline"><a href="../index.html">POKEDEX LABS</a></h1>
+      <h3 id="type"></h3>
+      <div
+        id="pokemon-list"
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+      ></div>
     </div>
-    <script src="script.js"></script>
+    <script src="type.js"></script>
   </body>
 </html>
