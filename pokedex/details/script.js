@@ -18,7 +18,7 @@ if (name) {
       const abilities = data.abilities
         .map((abilityInfo) => {
           const abilityName = abilityInfo.ability.name;
-          return `<a href="ability.html?ability=${abilityName}">${abilityName}</a>`;
+          return `<a href="ability.html?ability=${abilityName}" class="bg-[#3b82f6] px-2 py-1 text-white rounded">${abilityName}</a>`;
         })
         .join(" ");
       const spriteUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${id}.gif`;

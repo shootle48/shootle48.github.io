@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>PokeDex</title>
+    <title>Pokémon Ability</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,32 +29,12 @@
       <h1 class="text-4xl font-semibold underline mb-12">
         <a href="../index.html">POKEDEX LABS</a>
       </h1>
-      <img
-        id="sprite"
-        src=""
-        alt="Pokemon Sprite"
-        class="w-[200px] mb-4 rounded-2xl p-4"
-      />
+      <h3 id="ability" class="font-semibold text-4xl mb-4"></h3>
       <div
-        class="grid grid-cols-1 md:grid-cols-2 gap-4 bg-slate-300 p-6 rounded-lg text-slate-700"
-      >
-        <div class="flex flex-col gap-4">
-          <h1 id="name" class="font-semibold text-4xl">PokeDex Labs</h1>
-          <div>Height: <span id="height"></span></div>
-          <div>Weight: <span id="weight"></span></div>
-          <div>Types: <span id="types"></span></div>
-          <div>Abilities: <span id="abilities"></span></div>
-        </div>
-        <div class="collapse">
-          <input type="checkbox" />
-          <div class="collapse-title text-xl flex justify-between mt-2 p-0">
-            <p>Stats</p>
-            <i class="fa-solid fa-chevron-down "></i>
-          </div>
-          <div class="collapse-content"><div id="stats"></div></div>
-        </div>
-      </div>
+        id="pokemon-list"
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+      ></div>
     </div>
-    <script src="script.js"></script>
+    <script src="ability.js"></script>
   </body>
 </html>
