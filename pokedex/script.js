@@ -36,7 +36,7 @@ function fetchPokemon() {
             ele.innerHTML += `
                     <div class='flex flex-col justify-evenly items-center border-2 border-amber-300 rounded-lg min-h-96 min-w-60'>
                       <div class='text-2xl'>${name}</div>
-                      <div><img class='w-min h-[90px]' src='${img}' alt='Card image cap'></div>
+                      <div><img class='w-min h-[90px]' src='${img}' alt='Not Found'></div>
                       <div>${typesHTML}</div>
                       <a href='details/index.html?name=${name}' class='btn btn-primary text-slate-300'>More Info</a>
                     </div>

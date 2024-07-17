@@ -39,9 +39,9 @@ if (type) {
               )
               .join(" ");
             pokemonListElement.innerHTML += `
-                    <div class='flex flex-col justify-evenly items-center border-2 border-amber-300 rounded-lg min-h-96 min-w-60'>
+                    <div class='flex flex-col justify-evenly items-center border-2 border-amber-300 rounded-lg min-h-96 w-60'>
                       <div class='text-2xl'>${pokemonName}</div>
-                      <div><img class='w-min h-[90px]' src='${spriteUrl}' alt='Card image cap'></div>
+                      <div><img class='w-min h-[90px]' src='${spriteUrl}' alt='Not Found'></div>
                       <div>${typesHTML}</div>
                       <a href='index.html?name=${pokemonName}' class='btn btn-primary text-slate-300'>More Info</a>
                     </div>
