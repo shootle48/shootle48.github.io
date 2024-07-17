@@ -43,7 +43,7 @@ if (type) {
                       <div class='text-2xl'>${pokemonName}</div>
                       <div><img class='w-min h-[90px]' src='${spriteUrl}' alt='Card image cap'></div>
                       <div>${typesHTML}</div>
-                      <a href='details/index.html?name=${pokemonName}' class='btn btn-primary text-slate-300'>More Info</a>
+                      <a href='index.html?name=${pokemonName}' class='btn btn-primary text-slate-300'>More Info</a>
                     </div>
             `;
           })
