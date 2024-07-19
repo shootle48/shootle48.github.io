@@ -38,8 +38,9 @@ if (type) {
                   `<span class="bg-${type} text-white px-2 py-1 rounded">${type}</span>`
               )
               .join(" ");
+              const borderColor = calculateTypeColor(types[0]);
             pokemonListElement.innerHTML += `
-                    <div class='flex flex-col justify-evenly items-center border-2 border-amber-300 rounded-lg min-h-96 w-60'>
+                    <div class='flex flex-col justify-evenly items-center border-2 rounded-lg min-h-96 min-w-60' style='border-color: ${borderColor};'>
                       <div class='text-2xl'>${pokemonName}</div>
                       <div><img class='w-min h-[90px]' src='${spriteUrl}' alt='Not Found'></div>
                       <div>${typesHTML}</div>
@@ -51,4 +52,28 @@ if (type) {
       });
     })
     .catch((err) => console.error("Error fetching Pokémon type data:", err));
+}
+function calculateTypeColor(type) {
+  const typeColors = {
+    normal: "#a9a878",
+    fire: "#f07f2f",
+    water: "#6890f0",
+    electric: "#f8d030",
+    grass: "#78c84f",
+    ice: "#98d8d8",
+    fighting: "#c02f29",
+    poison: "#a040a1",
+    ground: "#e0c069",
+    flying: "#9781d7",
+    psychic: "#f85888",
+    bug: "#a8b821",
+    rock: "#b7a038",
+    ghost: "#705798",
+    dragon: "#7038f9",
+    dark: "#6f5848",
+    steel: "#b8b8d0",
+    fairy: "#f1b6bc",
+  };
+
+  return typeColors[type] || "#000"; // Fallback to black if type is not found
 }

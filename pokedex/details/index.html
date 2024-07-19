@@ -26,20 +26,34 @@
 
   <body>
     <div class="m-8 mt-20 text-lg flex flex-col items-center">
-      <h1 class="text-4xl font-semibold underline mb-12">
+      <h1 class="text-4xl font-semibold  mb-12">
         <a href="../index.html">POKEDEX LABS</a>
       </h1>
+      <div class="flex justify-between w-full max-w-3xl">
+        <button
+          id="prevButton"
+          class="hover:bg-slate-300 hover:text-slate-700 p-4 rounded-md"
+        >
+          Previous
+        </button>
+        <button
+          id="nextButton"
+          class="hover:bg-slate-300 hover:text-slate-700 p-4 rounded-md"
+        >
+          Next
+        </button>
+      </div>
       <img
         id="sprite"
         src=""
-        alt="Pokemon Sprite"
-        class="w-[200px] mb-4 rounded-2xl p-4"
+        alt="Pokemon Sprite"  
+        class="w-[200px] mb-8 rounded-2xl p-4"
       />
       <div
         class="grid grid-cols-1 md:grid-cols-2 gap-4 bg-slate-300 p-6 rounded-lg text-slate-700"
       >
         <div class="flex flex-col gap-4">
-          <h1 id="name" class="font-semibold text-4xl">PokeDex Labs</h1>
+          <h1 id="name" class="font-semibold text-4xl" data-id=""></h1>
           <div>Height: <span id="height"></span></div>
           <div>Weight: <span id="weight"></span></div>
           <div>Types: <span id="types"></span></div>
@@ -49,7 +63,7 @@
           <input type="checkbox" />
           <div class="collapse-title text-xl flex justify-between mt-2 p-0">
             <p>Stats</p>
-            <i class="fa-solid fa-chevron-down "></i>
+            <i class="fa-solid fa-chevron-down"></i>
           </div>
           <div class="collapse-content"><div id="stats"></div></div>
         </div>

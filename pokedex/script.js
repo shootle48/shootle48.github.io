@@ -16,6 +16,7 @@ function fetchPokemon() {
       const ele = document.getElementById("name");
 
       datas.forEach((element, index) => {
+        const id = data.id
         const img = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${
           offset + index + 1
         }.gif`;
