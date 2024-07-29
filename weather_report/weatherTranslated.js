@@ -51,7 +51,6 @@ const weatherTranslations = {
     "volcanic ash": "เถ้าภูเขาไฟ",
     "squalls": "พายุฝน",
     "tornado": "พายุทอร์นาโด"
-    // Add more translations as needed
   };
   
   export default weatherTranslations;

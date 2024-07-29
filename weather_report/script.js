@@ -38,9 +38,13 @@ document.getElementById("searchButton").addEventListener("click", () => {
           </div>
         </div>
         `;
-      } else {
+      }
+      else if(!city){
+        document.getElementById('weatherResult').innerHTML = "กรุณากรอกชื่อเมือง"
+      }
+      else {
         document.getElementById("weatherResult").innerHTML = `
-        <p>เกิดข้อผิดพลาดในการดึงข้อมูลอากาศ: ${data.message}</p>`;
+        <p>ไม่พบชื่อเมืองที่ค้นหา</p>`;
       }
     })
     .catch((error) => {
