@@ -40,7 +40,7 @@ if (type) {
               .join(" ");
               const borderColor = calculateTypeColor(types[0]);
             pokemonListElement.innerHTML += `
-                    <div class='flex flex-col justify-evenly items-center border-2 rounded-lg min-h-96 min-w-60' style='border-color: ${borderColor};'>
+                    <div class='flex flex-col justify-evenly items-center border-2 rounded-lg min-h-96 max-w-60' style='border-color: ${borderColor};'>
                       <div class='text-2xl'>${pokemonName}</div>
                       <div><img class='w-min h-[90px]' src='${spriteUrl}' alt='Not Found'></div>
                       <div>${typesHTML}</div>
